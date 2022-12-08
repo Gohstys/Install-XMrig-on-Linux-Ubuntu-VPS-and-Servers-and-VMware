@@ -8,3 +8,17 @@ To start use: xmrig/build/./xmrig -o stratum+tcp://prohashing.com:3359 -u sabias
 or
 
 sudo ./xmrig -o POOL:3333 -u WALLED -k
+
+
+MINERxCUDA INFO
+
+Compiling the CUDA plugin is optional and only required if you want to use NVIDIA GPUs.
+
+Follow the instructions at https://developer.nvidia.com/cuda-downloads to install CUDA.
+
+
+Advanced Construction
+
+We use build_deps.shscript to build recent versions of libuv , openssl and hwloc as static libraries.
+
+Use the ldd xmrig command to verify the binary dependencies.
